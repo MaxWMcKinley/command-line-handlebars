@@ -1,0 +1,20 @@
+<h1>Handlebars Example</h1>
+
+<script id="template" type="text/x-handlebars-template">
+  <table>
+    <thead>
+      <th>Product Id</th>
+      <th>Mod Code</th>
+      <th>Pass/Fail</th>
+    </thead>
+    <tbody>
+      {{#each data}}
+      <tr>
+        <td>{{this.pid}}</td>
+        <td>{{this.mod}}</td>
+        <td>{{this.success}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</script>
